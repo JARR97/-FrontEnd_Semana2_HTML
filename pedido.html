@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pastelería Cometa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 0px;
+      border-radius: 0;
+    }
+    
+    .jumbotron {
+      margin-bottom: 1px;
+      background-image: url(./img/111.jpg);
+      
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #3e1f70;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <body background="img/222.jpg">
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src=".\img\logo.png" class="img-responsive" style="width:800%;height:1100%;" alt="Image"alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./adornos.html">Adornos</a></li>
+        <li  class="active"><a href="./pedido.html">Pedido a tu gusto</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Tu cuenta</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron"> 
+    <div  style="color: floralwhite;" class="container text-center"> 
+     
+      <h1>Cometa Online</h1>
+    </div>
+  </div>
+  <!--<img src=".\img\cometa.jpg" alt="">-->
+  <p></p>
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm">
+        <form action="/action_page.php">
+          <h3 style="text-align: center;"> <b>Hola, bienvenido a la Pasteleria Cometa
+            en esta parte podras crear tu pedido a tu medida, por favor intenta ser lo más claro posible, agradecemos su preferencia</b>
+          </h3>
+        </form> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-success">
+          <div class="panel-heading">Ingresa tus datos</div>
+          <div class="panel-body" style="text-align: inherit;" >
+            <form id="form-login" action="#" method="post" >
+              <br><br><br><br>
+              <label for="nombre">Nombre: &nbsp &nbsp &nbsp</label>
+                  <input name="nombre" type="text" id="nombre" class="nombre" placeholder="Ingresa tu Nombre" autofocus=""/></p>
+              <label for="apellidos">Apellidos:&nbsp &nbsp</label> 
+                  <input name="apellidos" type="text" id="apellidos" class="apellidos" placeholder="Ingresa tus Apellidos"/></p>
+              <label for="correo">Correo:&nbsp &nbsp &nbsp &nbsp</label> 
+                  <input name="correo" type="text" id="correo" class="correo" placeholder="Ingresa tu Correo" /></p>
+              <label for="Telefono">Telefono:  &nbsp &nbsp</label> 
+                <input name="Telefono" type="phone" id="Telefono" class="Telefono" placeholder="Ingresa tu Telefono"/></p>
+              <label for="Descripcion">Descripcion:  &nbsp &nbsp</label> 
+              <textarea name="Descripcion" id="Descripcion" cols="50" rows="5" placeholder="Ingresa la Descripcion de tu pastel"></textarea></p>
+              <br><br><br>
+          </form>
+          </div>
+          <div class="panel-footer" align="center"> <p></p> <button type="button" disabled class="btn btn-block btn-success"> &nbsp</button></div>
+        </div>
+      </div>
+      <div class="col-sm-6"> 
+        <div class="panel panel-danger">
+          <div class="panel-heading">Ingresa los complementos de tu pastel</div>
+          <div class="panel-body" align="center" >
+            <form style="text-align: left;">
+              <div>
+                <p>Por favor ingrese uno o mas sabores: </p>
+                <input type="checkbox" id="Chocolate" name="Chocolate" value="Chocolate">
+                <label for="Chocolate"> Sabor a Chocolate</label><br>
+                <input type="checkbox" id="Vainilla" name="Vainilla" value="Vainilla">
+                <label for="Vainilla"> Sabor a Vainilla</label><br>
+                <input type="checkbox" id="Fresa" name="Fresa" value="Fresa">
+                <label for="Fresa"> Sabor a Fresa</label><br> 
+                <input type="checkbox" id="Café" name="Café" value="Café">
+                <label for="Café"> Sabor a Café</label><br> 
+                <input type="checkbox" id="Tres leches" name="Tres leches" value="Tres leches">
+                <label for="Tres leches"> Sabor a Tres leches</label>
+              </div>
+              <br><br>
+              <div>
+                <p>Por favor ingrese uno o mas complementos: </p>
+                <input type="checkbox" id="Letrero feliz cumpleaños" name="Letrero feliz cumpleaños" value="Letrero feliz cumpleaños">
+                <label for="Letrero_feliz_cumpleaños"> Mini Letrero feliz cumpleaños</label><br>
+                <input type="checkbox" id="Vela magíca" name="Vela magíca" value="Vela magíca">
+                <label for="Vela magíca"> Vela Magíca</label><br>
+                      <div>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" id="Verde" name="fav_language" value="Verde">
+                        <label for="Verde">Verde</label>&nbsp
+                        <input type="radio" id="Rojo" name="fav_language" value="Rojo">
+                        <label for="Rojo">Rojo</label>&nbsp
+                        <input type="radio" id="Azul" name="fav_language" value="Azul">
+                        <label for="Azul">Azul</label><br>
+                      </div>
+                      
+                <input type="checkbox" id="Vela Figura" name="Vela Figura" value="Vela Figura">
+                <label for="Vela Figura">Vela Figura</label><br> 
+                <div>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp
+                  <input type="radio" id="Nave Espacial" name="fav_language" value="Nave Espacial">
+                  <label for="Nave Espacial">Nave Espacial</label>&nbsp
+                  <input type="radio" id="Spiderman" name="fav_language" value="Spiderman">
+                  <label for="Spiderman">Spiderman</label>&nbsp
+                  <input type="radio" id="Pony" name="fav_language" value="Pony">
+                  <label for="Pony">Pony</label>&nbsp
+                  <input type="radio" id="Mickey" name="fav_language" value="Mickey">
+                  <label for="Mickey">Mickey</label>&nbsp
+                  <input type="radio" id="Batman" name="fav_language" value="Batman">
+                  <label for="Batman">Batman</label>
+                </div>
+                <input type="checkbox" id="Confeti" name="Confeti" value="Confeti">
+                <label for="Confeti"> Lanzador de Confeti</label><br> 
+                <input type="checkbox" id="Globos Variedad de Colores" name="Globos Variedad de Colores" value="Globos Variedad de Colores">
+                <label for="Globos Variedad de Colores"> Globos Variedad de Colores</label>
+                <div>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp
+                  <input type="radio" id="Tamaño 5" name="fav_language" value="Tamaño 5">
+                  <label for="Tamaño 5">Tamaño 5</label>&nbsp
+                  <input type="radio" id="Tamaño 7" name="fav_language" value="Tamaño 7">
+                  <label for="Tamaño 7">Tamaño 7</label>&nbsp
+                  <input type="radio" id="Tamaño 9" name="fav_language" value="Tamaño 9">
+                  <label for="Tamaño 9">Tamaño 9</label>&nbspTamaño 9
+                </div>
+              </div>
+            </form> 
+          </div>
+          <div class="panel-footer" align="center"><p></p> <button type="button"   class="btn btn-block btn-success">Hacer Pedido</button></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <p></p>  
+  <form class="form-inline">
+    <button type="button" class="btn btn-danger"></button>
+  </form>
+</footer>
+
+</body>
+</html>

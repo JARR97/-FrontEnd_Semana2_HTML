@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pastelería Cometa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 0px;
+      border-radius: 0;
+    }
+    
+    .jumbotron {
+      margin-bottom: 1px;
+      background-image: url(./img/111.jpg);
+      
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #3e1f70;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <body background="img/222.jpg">
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img src=".\img\logo.png" class="img-responsive" style="width:800%;height:1100%;" alt="Image"alt=""></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="./index.html">Inicio</a></li>
+        <li class="active"><a href="./indexAdmin.html">inventario</a></li>
+        <li ><a href="./PedidosAdmin.html">Pedidos</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Tu cuenta</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrito</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron"> 
+    <div  style="color: floralwhite;" class="container text-center"> 
+     
+      <h1>Cometa Online</h1>
+    </div>
+  </div>
+  <!--<img src=".\img\cometa.jpg" alt="">-->
+  <p></p>
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm">
+        <form action="/action_page.php">
+          <br><h3 style="text-align: center;"> <b>Hola Administrador, bienvenido al inventario de la pastelería Cometa, aquí podrás visualizar los sabres y complementos restantes</b>
+          </h3>
+        </form> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container">    
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-success">
+          <div class="panel-heading">Inventario de Sabores</div>
+          <div class="panel-body" style="text-align: inherit;" >
+            <div>
+              <ul>
+                <h5><b>Lista de Sabores &nbsp&nbsp Restantes  </b></h5>
+                <li>Sabor a Chocolate   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="numChoc">15</label></li>
+                <li>Sabor a Vainilla &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="numChoc">10</label></li>
+                <li>Sabor a Fresa &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label for="numChoc">20</label></li>
+                <li>Sabor a Café  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="numChoc">5</label></li>
+                <li>Sabor Tres leches &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="numChoc">8</label></li>
+              </ul>
+            </div>           
+          </div>
+          <div class="panel-footer" align="center"> <p></p> <button type="button" disabled class="btn btn-block btn-success"> &nbsp</button></div>
+        </div>
+      </div>
+      <div class="col-sm-6"> 
+        <div class="panel panel-danger">
+          <div class="panel-heading">Inventario de Complementos</div>
+          <div class="panel-body" align="center" >
+            <form style="text-align: left;">
+              <div>
+                <ul>
+                  <h5><b>Lista de Sabores &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Restantes  </b></h5>
+                  <li>Mini Letrero feliz cumpleaños   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<label for="numChoc">15</label></li>
+                  <li>Vela Magíca</li>
+                    <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Verde <label for="Verde">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 8</label>&nbsp</dd>
+                    <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Rojo <label for="Rojo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4</label>&nbsp</dd>
+                    <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Azul <label for="Azul">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 15</label><br></dd>
+                  <li>Vela de Figura</li>
+                    <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Nave Espacial <label for="Verde">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 8</label></dd>
+                    <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Spiderman <label for="Verde">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 19</label></dd>
+                    <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Pony <label for="Verde">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 9</label></dd>
+                    <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Mickey <label for="Verde">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4</label></dd>
+                    <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Batman <label for="Verde">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3</label></dd>
+                  <li>Lanzador de Confeti <label for="Rojo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4</label></li>
+                  <li>Globos Variedad de Colores</li>
+                  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Tamaño 5 <label for="Rojo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 7</label></dd>
+                  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Tamaño 7 <label for="Rojo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4</label></dd>
+                  <dd>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Tamaño 9 <label for="Rojo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 9</label></dd>
+                </ul>
+              </div>
+            </form> 
+          </div>
+          <div class="panel-footer" align="center"><p></p> <button type="button"   class="btn btn-block btn-success">Hacer Pedido</button></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <p></p>  
+  <form class="form-inline">
+    <button type="button" class="btn btn-danger"></button>
+  </form>
+</footer>
+
+</body>
+</html>
